@@ -12,10 +12,19 @@
   <script src="vendor/lenis/lenis.min.js" defer></script>
 
   <script src="scripts/app.js" defer></script>
+  
+  <style>
+  body {
+    background-image: url('img/ЛогоДоктор.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+	background-attachment: fixed;
+  }
+</style>
+
 </head>
 <body>
-
-  <div class="pattern"></div>
 
   <header class="header-top">
     <div class="top-line">
@@ -28,8 +37,7 @@
       </div>
   
 	  <div class="top-line__center">
-		<ion-icon size="small" name="call-outline"></ion-icon>
-		<!-- <a href="tel:+38(077)776-25-45" class="top-mnu-icon"><ion-icon size="large" name="call-outline"></ion-icon></a> -->
+		<ion-icon size="medium" name="call-outline"></ion-icon>
           <ul>
             <li><a href="tel:+38(077)776-25-45" class="top-mnu">380 777 762 545</a></li>
             <!-- <li><a href="tel:+38(077)754-57-62" class="top-mnu">380 777 545 762</a></li> -->
@@ -64,36 +72,17 @@
 
     </div>
   </header>
+  
+<div class="container">
+  <div class="box2"><br><p style="text-align: center;">ПРОФЕСІЙНИЙ РЕМОНТ, ТЮНІНГ ПРИВОДІВ ТА ІНШОГО ОБЛАДНАННЯ.</p></div><br>
+</div>
 
-	<section class="layers">
-		<div class="layers__container">
-			<div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
-			<div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
-			<div class="layers__item layer-6">
-				<div class="hero-content">
-					<button class="button-start" id="myButton">Welcome to the club</button>
-					<script>
-					  document.getElementById('myButton').onclick = function() {
-						window.location.href = 'https://forms.gle/YSXNUU3yCzW695LC8';
-					  };
-					</script>
-				</div>
-			</div>
-			<div class="layers__item layer-4">
-			</div>
-			<div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
-		</div>
-		  
-	</section>
-	
-  </div>
-	<footer class="footer-line">
+<footer class="footer-line">
 		<a href="https://www.youtube.com/@SFC.Airsoft" target="_blank"><ion-icon size="large" name="logo-youtube"></ion-icon></a>
 		<a href="https://www.facebook.com/profile.php?id=61591764995091" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
 		<a href="https://www.tiktok.com/@strikeforceclub" target="_blank"><ion-icon size="large" name="logo-tiktok"></ion-icon></a>
 		<a href="https://www.instagram.com/strikeforceclub" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
 	</footer>
-
 <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
 <script nomodule src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " >   </script>
 </body>
