@@ -475,16 +475,8 @@ ul {
 	}
 	
 	.footer-line {
-  position: fixed;
-  top: 85%;
-  left: 0;
-  right: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  /* pointer-events: none; */
-  z-index: 100;
-}
+  top: 85%;}
+  
 }
 
 @media (max-width: 767.98px) {
@@ -496,6 +488,9 @@ ul {
   .section-head {
     flex-direction: column;
 	}
+	
+		.footer-line {
+  top: 85%;}
 }
 
 @media (max-width: 575.98px) {
@@ -506,6 +501,10 @@ ul {
   .button-start {
 
 		margin-top: calc(var(--index) * 25);
+		}
+		
+	.footer-line {
+  top: 85%;}
 
 }
 
@@ -518,5 +517,8 @@ ul {
 
 		margin-top: calc(var(--index) * 30);
 	}
+	
+	.footer-line {
+  top: 85%;}
 
 }
