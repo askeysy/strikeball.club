@@ -175,6 +175,15 @@ ul {
   opacity: .5;
 }
 
+.footer-mnu {
+	font-size: 25px;
+	display: none;
+  background: rgba(255, 255, 255, .05);
+  border-radius: var(--radius);
+  padding: 4px;
+  /* backdrop-filter: blur(15px); */
+}
+
 .logo, .top-mnu, .mnu-button {
   pointer-events: auto;
 }
@@ -460,6 +469,10 @@ ul {
   .main-menu {
     width: 97%;
   }
+  
+  .footer-mnu {
+		display: block;
+	}
 }
 
 @media (max-width: 767.98px) {
