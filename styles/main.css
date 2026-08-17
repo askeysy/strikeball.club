@@ -453,6 +453,10 @@ ul {
 	pointer-events: none;
 }
 
+
+
+
+
 @media (max-width: 991.98px) {
 		.button-start {
 
@@ -475,7 +479,7 @@ ul {
 	}
 	
 	.footer-line {
-  top: 85%;}
+  top: 70%;}
   
 }
 
@@ -490,7 +494,7 @@ ul {
 	}
 	
 		.footer-line {
-  top: 80%;}
+  top: 70%;}
 }
 
 @media (max-width: 575.98px) {
@@ -504,7 +508,7 @@ ul {
 		}
 		
 	.footer-line {
-  top: 80%;}
+  top: 70%;}
 
 }
 
@@ -519,6 +523,6 @@ ul {
 	}
 	
 	.footer-line {
-  top: 80%;}
+  top: 70%;}
 
 }
