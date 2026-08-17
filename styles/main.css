@@ -458,9 +458,9 @@ ul {
 
 
 @media (max-width: 991.98px) {
-	.mnu-button__menu {
+	.button-start {
 		display: none;
-}
+	}
 	
   .top-line__center {
     display: none;
@@ -485,9 +485,9 @@ ul {
 }
 
 @media (max-width: 767.98px) {
-	.mnu-button__menu {
+	.button-start {
 		display: none;
-}
+	}
 		
   .section-head {
     flex-direction: column;
@@ -504,9 +504,9 @@ ul {
     flex-direction: column;
   }
   
-	.mnu-button__menu {
+	.button-start {
 		display: none;
-}
+	}
 		
 /* 	.footer-line {
   top: 80%;
@@ -520,9 +520,9 @@ ul {
     flex-direction: column;
   }
   
-	.mnu-button__menu {
+	.button-start {
 		display: none;
-}
+	}
 	
 /* 	.footer-line {
   top: 80%;
