@@ -475,7 +475,7 @@ ul {
   }
   
   .footer-mnu {
-		display: block;
+		display: inline;
 	}
 	
 	.footer-line {
