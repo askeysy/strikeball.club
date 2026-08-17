@@ -460,7 +460,7 @@ ul {
 @media (max-width: 991.98px) {
 		.button-start {
 
-		margin-top: calc(var(--index) * 20);
+		margin-top: calc(var(--index) * 15);
 	}
 	
   .top-line__center {
@@ -488,7 +488,7 @@ ul {
 @media (max-width: 767.98px) {
 	.button-start {
 
-		margin-top: calc(var(--index) * 20);
+		margin-top: calc(var(--index) * 15);
 	}
 		
   .section-head {
@@ -508,7 +508,7 @@ ul {
   
   .button-start {
 
-		margin-top: calc(var(--index) * 20);
+		margin-top: calc(var(--index) * 15);
 		}
 		
 	.footer-line {
@@ -525,7 +525,7 @@ ul {
   
 	.button-start {
 
-		margin-top: calc(var(--index) * 20);
+		margin-top: calc(var(--index) * 15);
 	}
 	
 	.footer-line {
