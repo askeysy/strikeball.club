@@ -453,6 +453,10 @@ ul {
 	pointer-events: none;
 }
 
+
+
+
+
 @media (max-width: 991.98px) {
 		.button-start {
 
@@ -475,7 +479,9 @@ ul {
 	}
 	
 	.footer-line {
-  top: 85%;}
+  /* top: 70%; */
+  padding-top: 28px;
+  }
   
 }
 
@@ -489,8 +495,10 @@ ul {
     flex-direction: column;
 	}
 	
-		.footer-line {
-  top: 80%;}
+	.footer-line {
+  /* top: 70%; */
+  padding-top: 28px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -504,7 +512,9 @@ ul {
 		}
 		
 	.footer-line {
-  top: 80%;}
+  /* top: 70%; */
+  padding-top: 28px;
+  }
 
 }
 
@@ -519,6 +529,8 @@ ul {
 	}
 	
 	.footer-line {
-  top: 80%;}
+  /* top: 70%; */
+  padding-top: 28px;
+  }
 
 }
