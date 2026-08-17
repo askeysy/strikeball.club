@@ -458,9 +458,6 @@ ul {
 
 
 @media (max-width: 991.98px) {
-	.button-start {
-		display: none;
-	}
 	
   .top-line__center {
     display: none;
@@ -485,9 +482,6 @@ ul {
 }
 
 @media (max-width: 767.98px) {
-	.button-start {
-		display: none;
-	}
 		
   .section-head {
     flex-direction: column;
@@ -503,11 +497,6 @@ ul {
   .section-head {
     flex-direction: column;
   }
-  
-	.button-start {
-		display: none;
-	}
-		
 /* 	.footer-line {
   top: 80%;
   padding-top: 25px;
@@ -519,10 +508,6 @@ ul {
 	  .section-head {
     flex-direction: column;
   }
-  
-	.button-start {
-		display: none;
-	}
 	
 /* 	.footer-line {
   top: 80%;
