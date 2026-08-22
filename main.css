@@ -449,6 +449,10 @@
 		.top-mnu {
 			font-size: 20px;
 		}
+		
+		.button-start {
+			margin-top: calc(var(--index) * 20);
+		}
 	}
 
 	@media (max-width: 575.98px) {
