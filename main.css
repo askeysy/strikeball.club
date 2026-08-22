@@ -389,13 +389,13 @@
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 5.5);
 }
-.hero-content {
+/* .hero-content {
 	font-size: calc(var(--index) * 0.9);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: calc(var(--index) * -.15);
 	line-height: 1.35em;
-	margin-top: calc(var(--index) * 1);
+	margin-top: calc(var(--index) * 1); */
 }
 .hero-content span {
 	display: block;
@@ -436,7 +436,7 @@
 
 	@media (max-width: 991.98px) {
 		.hero-content {
-	display: none;
+			display: none;
 		}
 		.top-line {
 			justify-content: space-between;
