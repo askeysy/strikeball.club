@@ -397,9 +397,9 @@
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 1); */
 }
-.hero-content span {
+/* .hero-content span {
 	display: block;
-}
+} */
 .hero-content__p {
 	text-transform: none;
 	font-family: merriweather-italic-3d;
