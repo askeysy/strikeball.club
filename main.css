@@ -382,7 +382,6 @@
 	transform: translateZ(400px);
 }
 .hero-content {
-	display: none;
 	font-size: calc(var(--index) * 2.9);
 	text-align: center;
 	text-transform: uppercase;
@@ -398,11 +397,10 @@
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 1); */
 }
-/* .hero-content span {
-	display: block;
-} */
-.hero-content__p {
+.hero-content span {
 	display: none;
+}
+.hero-content__p {
 	text-transform: none;
 	font-family: merriweather-italic-3d;
 	letter-spacing: normal;
@@ -410,7 +408,6 @@
 	line-height: 3;
 }
 .button-start {
-	display: none;
 	font-family: Arial;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -427,7 +424,6 @@
 	
 }
 .button-start:active {
-	display: none;
   /* background-color: orange; */
   transform: translateY(1.5px); /* Имитация нажатия вниз */
 }
