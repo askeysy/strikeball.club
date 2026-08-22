@@ -382,6 +382,7 @@
 	transform: translateZ(400px);
 }
 .hero-content {
+	display: none;
 	font-size: calc(var(--index) * 2.9);
 	text-align: center;
 	text-transform: uppercase;
@@ -409,6 +410,7 @@
 	line-height: 3;
 }
 .button-start {
+	display: none;
 	font-family: Arial;
 	font-weight: 600;
 	text-transform: uppercase;
