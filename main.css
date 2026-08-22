@@ -408,7 +408,6 @@
 		line-height: 3;
 	}
 	.button-start {
-		display: none;
 		font-family: Arial;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -436,9 +435,6 @@
 
 
 	@media (max-width: 991.98px) {
-		.hero-content {
-			display: none;
-		}
 		.top-line {
 			justify-content: space-between;
 		}
