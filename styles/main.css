@@ -181,6 +181,10 @@
   pointer-events: auto;
 }
 
+.top-mnu-small {
+	display: none;
+}
+
 .main-menu {
   opacity: 0;
   visibility: hidden;
@@ -433,7 +437,15 @@
 
 
 
-
+	@media (max-width: 1466.98px) {
+		.top-mnu-small {
+			display: block;
+		}
+		.top-mnu {
+			display: none;
+		}
+	}
+		
 	@media (max-width: 991.98px) {
 		.top-line {
 			justify-content: space-between;
