@@ -123,15 +123,7 @@
 		padding: 4px;
 		backdrop-filter: blur(15px);
 	}
-	
-	.top-mnu-small {
-		display: none;	
-		font-size: 30px;
-		background: rgba(255, 255, 255, .05);
-		border-radius: var(--radius);
-		padding: 4px;
-		backdrop-filter: blur(15px);
-	}
+
 	.top-mnu ul {
 		display: flex;
 		gap: 2px;
@@ -445,23 +437,16 @@
 
 
 
-/* 	@media (max-width: 1466.98px) {
+	@media (max-width: 1466.98px) {
 		.top-mnu-small {
 			display: block;
 		}
 		.top-mnu {
 			display: none;
 		}
-	} */
+	}
 		
 	@media (max-width: 991.98px) {
-		.top-mnu-small {
-			display: block;
-		}
-		.top-mnu {
-			display: none;
-		}
-		
 		.top-line {
 			justify-content: space-between;
 		}
