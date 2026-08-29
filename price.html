@@ -5,78 +5,363 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strike Force Club</title>
 
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
-  <script src="vendor/gsap/gsap.min.js" defer></script>
-  <script src="vendor/gsap/ScrollTrigger.min.js" defer></script>
-  <script src="vendor/lenis/lenis.min.js" defer></script>
+<div class="hud-scene">
 
-  <script src="scripts/app.js" defer></script>
-</head>
-<body>
+  <!-- CRT overlay -->
+  <div class="crt"></div>
 
-  <header class="header-top">
-    <div class="top-line">
+  <!-- Animated radar -->
+  <div class="radar">
+    <div class="radar-ring ring-1"></div>
+    <div class="radar-ring ring-2"></div>
+    <div class="radar-ring ring-3"></div>
+    <div class="radar-sweep"></div>
+  </div>
 
-      <div class="top-line__left">
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="Alt">
-        </a>
-		<a href="index.html" class="top-mnu">Strike Force Club</a>
-      </div>
-  
-	  <div class="top-line__center">
-		<ion-icon size="large" name="call-outline"></ion-icon>
-          <ul>
-            <li><a href="tel:+38(077)776-25-45" class="top-mnu">380 777 762 545</a></li>
-            <!-- <li><a href="tel:+38(077)754-57-62" class="top-mnu">380 777 545 762</a></li> -->
-          </ul>
-      </div>
+  <!-- Animated crosshair -->
+  <div class="crosshair">
+    <span></span>
+  </div>
 
-      <div class="top-line__right">
-        <div class="mnu-button">
-          <button class="mnu-button__menu">
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <div class="main-menu-background"></div>
-        <div class="main-menu">
-          <nav class="main-menu__inner">
-            <ul>
-				<li><a href="AboutUs.html" data-text="Про клуб">Про клуб<span></span></a></li>
-				<li><a href="registry.html"  target="_blank" data-text="Реєстрація">Реєстрація<span></span></a></li>
-				<li><a href="price.html" data-text="Ціни">Ціни<span></span></a></li>
-				<li><a href="promotions.html"  target="_blank" data-text="Акції">Акції<span></span></a></li>
-				<li><a href="#" data-text="Магазин">Магазин<span></span></a></li>
-				<li><a href="repair.html" data-text="Майстерня">Майстерня<span></span></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <!-- Scan effect -->
+  <div class="scan-line"></div>
 
-    </div>
-  </header>
-  
-<div class="container">
-  <div class="box"><br><br>Страйкбол,перша година, наступна година</div><br>
-  <div class="box">Кулі трасерні, 5000 шт, обойма 350 шт</div><br>
-  <div class="box">Прокат базового комплекту</div><br>
-  <div class="box">Оренда Сектора</div><br>
-  <div class="box">Питна вода, чай, кава</div><br>
+  <!-- HUD text -->
+  <div class="hud-loading">
+    SYSTEM ONLINE • TARGET LOCKED • TACTICAL MODE ACTIVE
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrapper">
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th>⚔️ Товар/послуга</th>
+          <th>💀 Ціна</th>
+          <th>🟥 Ціна для резидентів</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Страйкбол, перша година</td>
+          <td>300</td>
+          <td>250</td>
+        </tr>
+
+        <tr>
+          <td>Страйкбол, наступна година</td>
+          <td>100</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-<br>
-<br>
-<br>
-	<footer class="footer-line">
-		<a href="tel:+38(077)776-25-45"><ion-icon size="large" name="call"></ion-icon></a>
-		<a href="https://maps.app.goo.gl/3d5Ba881Z7cYCSja7" target="_blank"><img src="img/pin.png" alt="Alt"></a>
-		<a href="https://www.youtube.com/@SFC.Airsoft" target="_blank"><ion-icon size="large" name="logo-youtube"></ion-icon></a>
-		<a href="https://www.facebook.com/profile.php?id=61591764995091" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
-		<a href="https://www.tiktok.com/@strikeforceclub" target="_blank"><ion-icon size="large" name="logo-tiktok"></ion-icon></a>
-		<a href="https://www.instagram.com/strikeforceclub" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
-	</footer>
-<script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
-<script nomodule src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " >   </script>
+
+<style>
+  body {
+    margin: ;
+    overflow-x: hidden;
+    background:
+      linear-gradient(rgba(,,,.92), rgba(,,,.92)),
+      url('https://images.unsplash.com/photo-151784190524-472988babdf9?q=80&w=160&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #f5f5f5;
+  }
+
+  .hud-scene {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 15px;
+    overflow: hidden;
+  }
+
+  /* CRT SCREEN EFFECT */
+  .crt {
+    position: fixed;
+    inset: ;
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,.03),
+        rgba(255,255,255,.03) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+    mix-blend-mode: soft-light;
+    opacity: .18;
+    pointer-events: none;
+    z-index: 20;
+  }
+
+  /* RADAR */
+  .radar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgba(255,,,.35);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .radar-ring {
+    position: absolute;
+    border: 1px solid rgba(255,,,.25);
+    border-radius: 50%;
+    inset: 20%;
+  }
+
+  .ring-2 {
+    inset: 35%;
+  }
+
+  .ring-3 {
+    inset: 48%;
+  }
+
+  .radar-sweep {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(
+      45deg,
+      rgba(255,,,.35),
+      transparent
+    );
+    transform-origin: bottom right;
+    animation: radarRotate 3s linear infinite;
+    top: ;
+    left: ;
+  }
+
+  /* CROSSHAIR */
+  .crosshair {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255,,,.4);
+    border-radius: 50%;
+    animation: pulseCrosshair 2s infinite;
+    z-index: 1;
+  }
+
+  .crosshair::before,
+  .crosshair::after,
+  .crosshair span::before,
+  .crosshair span::after {
+    content: "";
+    position: absolute;
+    background: rgba(255,,,.7);
+  }
+
+  .crosshair::before {
+    width: 2px;
+    height: 40px;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+  }
+
+  .crosshair::after {
+    width: 2px;
+    height: 40px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+  }
+
+  .crosshair span::before {
+    width: 40px;
+    height: 2px;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .crosshair span::after {
+    width: 40px;
+    height: 2px;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* SCAN LINE */
+  .scan-line {
+    position: absolute;
+    top: -120px;
+    left: ;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255,,,),
+      rgba(255,,,.18),
+      rgba(255,,,)
+    );
+    animation: scanMove 4s linear infinite;
+    pointer-events: none;
+    z-index: 3;
+  }
+  /* HUD TEXT */
+  .hud-loading {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 18px;
+    color: #ff4d4d;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-shadow:   8px rgba(255,,,.7);
+    animation: flicker 1.6s infinite;
+  }
+
+  /* TABLE */
+  .table-wrapper {
+    position: relative;
+    z-index: 5;
+    overflow-x: auto;
+  }
+
+  .price-table {
+    width: 100%;
+    min-width: 550px;
+    border-collapse: collapse;
+    background: rgba(10,10,10,.88);
+    border: 2px solid #ff1a1a;
+    box-shadow:
+        12px rgba(255,,,.35),
+        30px rgba(255,,,.12),
+      inset   15px rgba(255,,,.08);
+    animation: pulseGlow 2s infinite alternate;
+    backdrop-filter: blur(4px);
+  }
+
+  .price-table th {
+    background: linear-gradient(90deg, #111, #550000);
+    color: #ff4d4d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px;
+    border: 1px solid #ff3333;
+    font-size: 15px;
+    text-shadow:   8px rgba(255,,,.8);
+  }
+
+  .price-table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid rgba(255,,,.2);
+    color: #f2f2f2;
+    font-size: 15px;
+  }
+
+  .price-table td:first-child {
+    text-align: left;
+    padding-left: 18px;
+  }
+
+  .price-table tbody tr:nth-child(even) {
+    background: rgba(255,,,.05);
+  }
+
+  .price-table tbody tr:hover {
+    background: rgba(255,,,.14);
+    transition: .25s ease;
+  }
+
+  /* ANIMATIONS */
+  @keyframes radarRotate {
+    from {
+      transform: rotate(deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes scanMove {
+    from {
+      transform: translateY(-120px);
+    }
+
+    to {
+      transform: translateY(100vh);
+    }
+  }
+
+  @keyframes pulseGlow {
+    from {
+      box-shadow:
+          10px rgba(255,,,.25),
+          20px rgba(255,,,.08);
+    }
+
+    to {
+      box-shadow:
+          18px rgba(255,,,.45),
+          45px rgba(255,,,.18);
+    }
+  }
+
+  @keyframes pulseCrosshair {
+    %, 100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: .7;
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.08);
+      opacity: 1;
+    }
+  }
+
+  @keyframes flicker {
+    %,18%,22%,25%,53%,57%,100% {
+      opacity: 1;
+    }
+
+    20%,24%,55% {
+      opacity: .35;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .radar {
+      width: 110px;
+      height: 110px;
+      top: 15px;
+      right: 15px;
+    }
+
+    .crosshair {
+      width: 80px;
+      height: 80px;
+    }
+
+    .price-table th,
+    .price-table td {
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .hud-loading {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+  }
+</style>
 </body>
 </html>
