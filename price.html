@@ -13,324 +13,70 @@
 
   <script src="scripts/app.js" defer></script>
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+<body>
 
-<div class="cyberpunk-ui">
+  <header class="header-top">
+    <div class="top-line">
 
-  <!-- Animated background -->
-  <div class="grid"></div>
-  <div class="glow glow-pink"></div>
-  <div class="glow glow-cyan"></div>
+      <div class="top-line__left">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="Alt">
+        </a>
+		<a href="index.html" class="top-mnu">Strike Force Club</a>
+      </div>
+  
+	  <div class="top-line__center">
+		<ion-icon size="large" name="call-outline"></ion-icon>
+          <ul>
+            <li><a href="tel:+38(077)776-25-45" class="top-mnu">380 777 762 545</a></li>
+            <!-- <li><a href="tel:+38(077)754-57-62" class="top-mnu">380 777 545 762</a></li> -->
+          </ul>
+      </div>
 
-  <!-- HUD title -->
-  <div class="hud-title glitch" data-text="TACTICAL PRICE SYSTEM">
-    TACTICAL PRICE SYSTEM
-  </div>
+      <div class="top-line__right">
+        <div class="mnu-button">
+          <button class="mnu-button__menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="main-menu-background"></div>
+        <div class="main-menu">
+          <nav class="main-menu__inner">
+            <ul>
+				<li><a href="AboutUs.html" data-text="Про клуб">Про клуб<span></span></a></li>
+				<li><a href="registry.html"  target="_blank" data-text="Реєстрація">Реєстрація<span></span></a></li>
+				<li><a href="price.html" data-text="Ціни">Ціни<span></span></a></li>
+				<li><a href="promotions.html"  target="_blank" data-text="Акції">Акції<span></span></a></li>
+				<li><a href="#" data-text="Магазин">Магазин<span></span></a></li>
+				<li><a href="repair.html" data-text="Майстерня">Майстерня<span></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-  <!-- Action buttons -->
-  <div class="hud-buttons">
-    <button class="neon-btn">BOOK GAME</button>
-    <button class="neon-btn alt">BECOME RESIDENT</button>
-  </div>
-
-  <!-- Table -->
-  <div class="table-wrapper">
-    <table class="price-table">
-      <thead>
-        <tr>
-          <th>⚡️ Товар/послуга</th>
-          <th>💰 Ціна</th>
-          <th>🟣 Ціна для резидентів</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Страйкбол, перша година</td>
-          <td>300</td>
-          <td>250</td>
-        </tr>
-
-        <tr>
-          <td>Страйкбол, наступна година</td>
-          <td>100</td>
-          <td>50</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
+    </div>
+  </header>
+  
+<div class="container">
+  <div class="box"><br><br>Страйкбол,перша година, наступна година</div><br>
+  <div class="box">Кулі трасерні, 5000 шт, обойма 350 шт</div><br>
+  <div class="box">Прокат базового комплекту</div><br>
+  <div class="box">Оренда Сектора</div><br>
+  <div class="box">Питна вода, чай, кава</div><br>
 </div>
-
-<style>
-  body {
-    margin: ;
-    overflow-x: hidden;
-    background:
-      radial-gradient(circle at top, #170025 %, #090014 40%, #000 100%);
-    font-family: 'Orbitron', sans-serif;
-    color: #fff;
-  }
-
-  .cyberpunk-ui {
-    position: relative;
-    min-height: 100vh;
-    padding: 40px 15px;
-    overflow: hidden;
-  }
-
-  /* GRID */
-  .grid {
-    position: absolute;
-    inset: ;
-    background-image:
-      linear-gradient(rgba(,255,255,.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(,255,255,.08) 1px, transparent 1px);
-    background-size: 40px 40px;
-    transform: perspective(800px) rotateX(70deg);
-    transform-origin: top;
-    animation: gridMove 12s linear infinite;
-    opacity: .35;
-  }
-
-  /* GLOWS */
-  .glow {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: .18;
-  }
-
-  .glow-pink {
-    background: #ff00cc;
-    top: -150px;
-    left: -100px;
-  }
-
-  .glow-cyan {
-    background: #00f7ff;
-    bottom: -150px;
-    right: -100px;
-  }
-
-  /* GLITCH TITLE */
-  .hud-title {
-    position: relative;
-    z-index: 5;
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 34px;
-    color: #00f7ff;
-    letter-spacing: 4px;
-    text-shadow:
-        8px #00f7ff,
-        18px #00f7ff;
-  }
-
-  .glitch::before,
-  .glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    inset: ;
-  }
-
-  .glitch::before {
-    color: #ff00cc;
-    transform: translate(-2px, -2px);
-    opacity: .7;
-    animation: glitch 2s infinite;
-  }
-
-  .glitch::after {
-    color: #00f7ff;
-    transform: translate(2px, 2px);
-    opacity: .7;
-    animation: glitch 1.5s infinite reverse;
-  }
-
-  /* BUTTONS */
-  .hud-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 5;
-  }
-
-  .neon-btn {
-    background: transparent;
-    border: 2px solid #00f7ff;
-    color: #00f7ff;
-    padding: 14px 24px;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: .25s ease;
-    box-shadow:
-        10px rgba(,247,255,.4),
-      inset   10px rgba(,247,255,.15);
-  }
-
-  .neon-btn.alt {
-    border-color: #ff00cc;
-    color: #ff00cc;
-    box-shadow:
-        10px rgba(255,,204,.4),
-      inset   10px rgba(255,,204,.15);
-  }
-
-  .neon-btn::before {
-    content: "";
-    position: absolute;
-    top: ;
-    left: -120%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255,255,255,.35),
-      transparent
-    );
-    transition: .45s;
-  }
-
-  .neon-btn:hover::before {
-    left: 120%;
-  }
-
-  .neon-btn:hover {
-    transform: translateY(-2px) scale(1.03);
-    box-shadow:
-        18px rgba(,247,255,.75),
-        35px rgba(,247,255,.35);
-  }
-
-  .neon-btn.alt:hover {
-    box-shadow:
-	18px rgba(255,,204,.75),
-        35px rgba(255,,204,.35);
-  }
-
-  /* TABLE */
-  .table-wrapper {
-    position: relative;
-    z-index: 5;
-    overflow-x: auto;
-  }
-
-  .price-table {
-    width: 100%;
-    min-width: 550px;
-    border-collapse: collapse;
-    background: rgba(10,10,20,.82);
-    border: 2px solid #ff00cc;
-    backdrop-filter: blur(8px);
-    box-shadow:
-        18px rgba(255,,204,.45),
-        45px rgba(,247,255,.12);
-    overflow: hidden;
-  }
-
-  .price-table th {
-    background: linear-gradient(90deg, #190028, #2d004d);
-    color: #00f7ff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 16px;
-    border-bottom: 1px solid rgba(,247,255,.25);
-    text-shadow:   8px #00f7ff;
-  }
-
-  .price-table td {
-    padding: 14px;
-    text-align: center;
-    border-bottom: 1px solid rgba(255,255,255,.08);
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 18px;
-    transition: .25s ease;
-  }
-
-  .price-table td:first-child {
-    text-align: left;
-    padding-left: 18px;
-  }
-
-  .price-table tbody tr {
-    position: relative;
-  }
-
-  .price-table tbody tr:hover {
-    background: rgba(,247,255,.08);
-  }
-
-  .price-table tbody tr:hover td {
-    color: #00f7ff;
-    text-shadow:   6px rgba(,247,255,.55);
-  }
-
-  /* ANIMATIONS */
-  @keyframes glitch {
-    % {
-      clip-path: inset(  85% );
-    }
-
-    20% {
-      clip-path: inset(20%  55% );
-    }
-
-    40% {
-      clip-path: inset(40%  35% );
-    }
-
-    60% {
-      clip-path: inset(60%  15% );
-    }
-
-    80% {
-      clip-path: inset(10%  70% );
-    }
-
-    100% {
-      clip-path: inset(80%  5% );
-    }
-  }
-
-  @keyframes gridMove {
-    from {
-      background-position:  ,  ;
-    }
-
-    to {
-      background-position:  40px, 40px ;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .hud-title {
-      font-size: 22px;
-      letter-spacing: 2px;
-    }
-
-    .price-table th,
-    .price-table td {
-      padding: 10px;
-      font-size: 13px;
-    }
-
-    .neon-btn {
-      width: 100%;
-      max-width: 320px;
-    }
-  }
-</style>
-
+<br>
+<br>
+<br>
+	<footer class="footer-line">
+		<a href="tel:+38(077)776-25-45"><ion-icon size="large" name="call"></ion-icon></a>
+		<a href="https://maps.app.goo.gl/3d5Ba881Z7cYCSja7" target="_blank"><img src="img/pin.png" alt="Alt"></a>
+		<a href="https://www.youtube.com/@SFC.Airsoft" target="_blank"><ion-icon size="large" name="logo-youtube"></ion-icon></a>
+		<a href="https://www.facebook.com/profile.php?id=61591764995091" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+		<a href="https://www.tiktok.com/@strikeforceclub" target="_blank"><ion-icon size="large" name="logo-tiktok"></ion-icon></a>
+		<a href="https://www.instagram.com/strikeforceclub" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+	</footer>
+<script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+<script nomodule src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " >   </script>
 </body>
 </html>
