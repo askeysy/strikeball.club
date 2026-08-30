@@ -14,20 +14,18 @@
 		--index: calc(1vw + 1vh);
 		--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 	}
-	@font-face {
-		font-family: kamerik-3d;
-		src: url(../fonts/kamerik205-heavy.woff2);
-		font-weight: 900;
-	}
-	@font-face {
-		font-family: merriweather-italic-3d;
-		src: url(../fonts/merriweather-regular-italic.woff2);
-	}
-	body {
-		background-color: #4b5320;
-		color: #fff;
-		font-family: kamerik-3d;
-	}
+	
+/* @font-face {
+  font-family: 'Black Ops One';
+  src: url('../fonts/MyFont-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+body {
+  font-family: 'Black Ops One';
+}
 
 
 	a {
