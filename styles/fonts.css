@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'B52';
+    src: url('B52.woff2') format('woff2'),
+        url('B52.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'B52';
+    src: url('B52_1.woff2') format('woff2'),
+        url('B52_1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: 'a_Stamper';
+    src: url('AStamperBold.woff2') format('woff2'),
+        url('AStamperBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'volja-regular_w';
+    src: url('volja-regular_w.woff2') format('woff2'),
+        url('volja-regular_w.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

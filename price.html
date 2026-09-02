@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		
+		<title>SFC/Ціни</title>
+
+		<link rel="stylesheet" href="styles/main.css">
+
+		<script src="vendor/gsap/gsap.min.js" defer></script>
+		<script src="vendor/gsap/ScrollTrigger.min.js" defer></script>
+		<script src="vendor/lenis/lenis.min.js" defer></script>
+
+		<script src="scripts/app.js" defer></script>
+	</head>
+
+	<body>
+
+		<div class="pattern"></div>
+
+		<header class="header-top">
+			<div class="top-line">
+				<div class="top-line__left">
+					<a href="index.html" class="logo">
+						<img src="img/logo.png" alt="Alt">
+					</a>
+				</div>
+				<div class="top-line__center">
+					<ul>
+						<li><a href="tel:+38(077)776-25-45" class="top-mnu">380 777 762 545</a></li>
+						<li><a href="tel:+38(077)754-57-62" class="top-mnu">380 777 545 762</a></li>
+					</ul>
+				</div>
+				<div class="top-line__right">
+					<div class="mnu-button">
+						<button class="mnu-button__menu">
+							<span>
+							</span>
+							<span>
+							</span>
+						</button>
+					</div>
+					<div class="main-menu-background">
+					</div>
+					<div class="main-menu">
+						<nav class="main-menu__inner">
+							<ul>
+								<li><a href="AboutUs.html" data-text="Про клуб">Про клуб<span></span></a></li>
+								<li><a href="SocialMedia.html" data-text="Наші соцмережі">Наші соцмережі</span></a></li>
+								<!-- <li><a href="https://forms.gle/YSXNUU3yCzW695LC8"  target="_blank" data-text="Реєстрація">Реєстрація<span></span></a></li> -->
+								<li><a href="registry.html"  target="_blank" data-text="Реєстрація">Реєстрація<span></span></a></li>
+								<li><a href="price.html" data-text="ЦІНИ">ЦІНИ<span></span></a></li>
+								<li><a href="promotions.html" data-text="АКЦІЇ">АКЦІЇ<span></span></a></li>
+								<!-- <li><a href="#" data-text="CQB">CQB<span></span></a></li> -->
+								<!-- <li><a href="#" data-text="IPSC">IPSC<span></span></a></li> -->
+								<!-- <li><a href="#" data-text="GYM">GYM<span></span></a></li> -->
+								<!-- <li><a href="#" data-text="Тир">Тир<span></span></a></li> -->
+								<!-- <li><a href="#" data-text="Медіа звіти">Медіа звіти<span></span></a></li> -->
+								<!-- <li><a href="#" data-text="Магазин">Магазин<span></span></a></li> -->
+								<li><a href="repair.html" data-text="Майстерня">Майстерня<span></span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<body>
+			<style>
+			
+		  /* TABLE */
+  .table-wrapper {
+	
+    position: relative;
+	padding-top: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+    z-index: 5;
+    overflow-x: auto;
+  }
+
+  .price-table {
+    width: 100%;
+    min-width: 550px;
+    border-collapse: collapse;
+    background: rgba(10,10,10,.88);
+    border: 2px solid #ff1a1a;
+    box-shadow:
+        12px rgba(255,,,.35),
+        30px rgba(255,,,.12),
+      inset   15px rgba(255,,,.08);
+    animation: pulseGlow 2s infinite alternate;
+    backdrop-filter: blur(4px);
+  }
+
+  .price-table th {
+  
+    background: linear-gradient(90deg, #111, #550000);
+    color: #ff4d4d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px;
+    border: 1px solid #ff3333;
+    font-size: 15px;
+    text-shadow:   8px rgba(255,,,.8);
+  }
+
+  .price-table td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid rgba(255,,,.2);
+    color: #f2f2f2;
+    font-size: 15px;
+  }
+
+  .price-table td:first-child {
+    text-align: left;
+    padding-left: 18px;
+  }
+
+  .price-table tbody tr:nth-child(even) {
+    background: rgba(255,,,.05);
+  }
+
+  .price-table tbody tr:hover {
+    background: rgba(255,,,.14);
+    transition: .25s ease;
+  }
+  </style>
+  <!-- Table -->
+  <div class="table-wrapper">
+    <table class="price-table">
+      <thead>
+        <tr>
+          <th>Товар, послуга</th>
+          <th>Ціна</th>
+          <th>Ціна для резидентів</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Страйкбол, перша година</td>
+          <td>300</td>
+          <td>250</td>
+        </tr>
+
+        <tr>
+          <td>Страйкбол, наступна година</td>
+          <td>100</td>
+          <td>50</td>
+        </tr>
+		
+		<tr>
+          <td>Прокат зброї</td>
+          <td>300</td>
+          <td>200</td>
+        </tr>
+		
+		<tr>
+          <td>Трасерні кулі, бункерний магазин (350 од.)</td>
+          <td>120</td>
+          <td>100</td>
+        </tr>
+		
+		<tr>
+          <td>Трасерні кулі, 2000 од.</td>
+          <td>500</td>
+          <td>450</td>
+        </tr>
+		
+		<tr>
+          <td>Трасерні кулі, 5000 од.</td>
+          <td>1200</td>
+          <td>1050</td>
+        </tr>
+		
+		<tr>
+          <td>ОРЕНДА СЕКТОРА (на 10 гравців), перша година</td>
+          <td>3000</td>
+          <td>2500</td>
+        </tr>
+		
+		<tr>
+          <td>ОРЕНДА СЕКТОРА, наступна година</td>
+          <td>1000</td>
+          <td>500</td>
+        </tr>
+		
+      </tbody>
+    </table>
+  </div>
+</div>
+
+		<footer class="footer-line">
+			<a href="tel:+38(077)776-25-45"><ion-icon size="large" name="call"></ion-icon></a>
+			<a href="https://maps.app.goo.gl/3d5Ba881Z7cYCSja7" target="_blank"><img src="img/pin.png" alt="Alt"></a>
+			<a href="https://www.youtube.com/@SFC.Airsoft" target="_blank"><ion-icon size="large" name="logo-youtube"></ion-icon></a>
+			<a href="https://www.facebook.com/profile.php?id=61591764995091" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+			<a href="https://www.tiktok.com/@strikeforceclub" target="_blank"><ion-icon size="large" name="logo-tiktok"></ion-icon></a>
+			<a href="https://www.instagram.com/strikeforceclub" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+		</footer>
+
+		<script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+		<script nomodule src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " >   </script>
+	</body>
+</html>
