@@ -66,6 +66,19 @@ ul {
   font-size: 23px;
 }
 
+.box { 
+	width: 100%;
+	display: flex;
+}
+
+.boxright {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+
+
 .header-top {
   position: fixed;
   top: 0;
