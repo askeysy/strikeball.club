@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'B52';
     src: url('B52.woff2') format('woff2'),
         url('B52.woff') format('woff');
@@ -14,7 +14,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 /* @font-face {
     font-family: 'a_Stamper';
@@ -30,6 +30,14 @@
     src: url('volja-regular_w.woff2') format('woff2'),
         url('volja-regular_w.woff') format('woff');
     font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CMU_Typewriter_Text_Bold';
+    src: url('CMU_Typewriter_Text_Bold.woff2') format('woff2'),
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }

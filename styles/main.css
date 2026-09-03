@@ -25,6 +25,7 @@ body {
 
 .BigFont {
 	font-family: "volja-regular_w", normal;
+	color: black;
 }
 
 a {
@@ -62,9 +63,22 @@ ul {
   padding-top: 110px;
   width: calc(1360px + 30px);
   max-width: 100%;
-  font-family: "B52", normal;
-  font-size: 23px;
+  font-family: "CMU_Typewriter_Text_Bold", normal;
+  font-size: 22px;
 }
+
+.container2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 110px;
+  width: device-width;
+  max-width: 100%;
+  font-family: "CMU_Typewriter_Text_Bold", normal;
+  font-size: 22px;
+}
+
 
 .box { 
 	width: 100%;
@@ -449,7 +463,7 @@ ul {
 	border: rgb(255 153 0) 3px solid;
 	outline: none;
 	cursor: pointer;
-	margin-top: calc(var(--index) * 7);
+	margin-top: calc(var(--index) * 4);
 	
 }
 .button-start:active {
