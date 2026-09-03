@@ -483,13 +483,13 @@ ul {
   }
 
 .layer-2 {
-	transform: translateZ(200px) scale(.8);
+	transform: translateZ(300px) scale(.8);
 }
 .layer-3 {
 	transform: translateZ(0px) scale(.8);
 }
 .layer-4 {
-	transform: translateZ(210px) scale(.9);
+	transform: translateZ(310px) scale(.9);
 }
 .layer-5 {
 	transform: translateZ(600px) scale(.9);
