@@ -101,6 +101,23 @@ ul {
   padding-top: 20px;
   /* pointer-events: none; */
   z-index: 100;
+  
+  background: rgba(255, 255, 255, .05);
+  border-radius: var(--radius);
+  padding: 4px;
+  backdrop-filter: blur(15px);
+}
+
+.footer-line-index {
+  position: fixed;
+  top: 90%;
+  left: 0;
+  right: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  /* pointer-events: none; */
+  z-index: 100;
 }
 
 .top-line {
@@ -401,7 +418,7 @@ ul {
 	transform: translateZ(-80px) scale(1.06);
 }
 .layer-2 {
-	transform: translateZ(80px) scale(.8);
+	transform: translateZ(120px) scale(.8);
 }
 .layer-3 {
 	transform: translateZ(0px) scale(.8);
@@ -410,10 +427,10 @@ ul {
 	transform: translateZ(190px) scale(.9);
 }
 .layer-5 {
-	transform: translateZ(300px) scale(.9);
+	transform: translateZ(500px) scale(.9);
 }
 .layer-6 {
-	transform: translateZ(400px);
+	transform: translateZ(550px);
 }
 .hero-content {
 	font-size: calc(var(--index) * 2.9);
@@ -454,7 +471,7 @@ ul {
 	border: rgb(255 153 0) 3px solid;
 	outline: none;
 	cursor: pointer;
-	margin-top: calc(var(--index) * 12);
+	margin-top: calc(var(--index) * 8);
 	
 }
 .button-start:active {
