@@ -23,6 +23,10 @@ body {
 	font-family: "volja-regular_w", normal;
 }
 
+.SmallScreen {
+	display: none;
+}
+
 .BigFont {
 	font-family: "volja-regular_w", normal;
 	color: black;
@@ -484,7 +488,13 @@ ul {
 
   .main-menu {
     width: 97%;
-  }
+	}
+		/* .BigScreen {
+			display: none;
+	}
+		.SmallScreen {
+			display: flex;
+	} */
 }
 
 @media (max-width: 767.98px) {
