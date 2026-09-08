@@ -12,306 +12,15 @@
 
 		<script src="scripts/app.js" defer></script>
   <style>
-    *{
-      margin:;
-      padding:;
-      box-sizing:border-box;
-      <!-- font-family:Arial, sans-serif; -->
-    }
-
-    body{
-      background:#4b5320;
-      color:#fff;
+  
+<!--     body{
       display:flex;
       justify-content:center;
       align-items:center;
       min-height:100vh;
       padding:20px;
-    }
+    } -->
 
-    .page{
-      width:100%;
-      <!-- max-width:160px; -->
-      aspect-ratio:16/9;
-      background:
-        linear-gradient(rgba(,,,.75), rgba(,,,.75)),
-        url('https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=160&auto=format&fit=crop');
-      background-size:cover;
-      background-position:center;
-      border-radius:20px;
-      padding:40px;
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:25px;
-      align-content:center;
-    }
-
-    .cardFB{
-      background:rgba(30,30,30,.85);
-      border:1px solid rgba(0,102,255,.08);
-      border-radius:18px;
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      transition:.25s ease;
-      backdrop-filter:blur(6px);
-    }
-	
-	.cardYT{
-      background:rgba(30,30,30,.85);
-      border:1px solid rgba(255,0,51,.08);
-      border-radius:18px;
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      transition:.25s ease;
-      backdrop-filter:blur(6px);
-    }
-	
-	.cardIG{
-      background:rgba(30,30,30,.85);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:18px;
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      transition:.25s ease;
-      backdrop-filter:blur(6px);
-    }
-	
-	.cardTG{
-      background:rgba(30,30,30,.85);
-      border:1px solid rgba(51,153,204,.08);
-      border-radius:18px;
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      transition:.25s ease;
-      backdrop-filter:blur(6px);
-    }
-	
-	.cardTT{
-      background:rgba(30,30,30,.85);
-      border:1px solid rgba(255,153,51,.08);
-      border-radius:18px;
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      transition:.25s ease;
-      backdrop-filter:blur(6px);
-    }
-	
-	.cardGG{
-      background:rgba(30,30,30,.85);
-      border:1px solid rgba(0,204,51,.08);
-      border-radius:18px;
-      padding:24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      transition:.25s ease;
-      backdrop-filter:blur(6px);
-    }
-	
-    .cardFB:hover{
-      transform:translateY(-10px);
-      border-color:#0066ff;
-      box-shadow:  18px rgba(76,175,80,.35);
-    }
-	
-	.cardYT:hover{
-      transform:translateY(-10px);
-      border-color:#ff0033;
-      box-shadow:  18px rgba(76,175,80,.35);
-    }
-	
-	.cardIG:hover{
-      transform:translateY(-10px);
-      border-color:#ff00cc;
-      box-shadow:  18px rgba(76,175,80,.35);
-    }
-	
-	.cardTG:hover{
-      transform:translateY(-10px);
-      border-color:#3399cc;
-      box-shadow:  18px rgba(76,175,80,.35);
-    }
-	
-	.cardTT:hover{
-      transform:translateY(-10px);
-      border-color:#ff9933;
-      box-shadow:  18px rgba(76,175,80,.35);
-    }
-	
-	.cardGG:hover{
-      transform:translateY(-10px);
-      border-color:#33cc33;
-      box-shadow:  18px rgba(76,175,80,.35);
-    }
-	
-    .titleFB{
-      font-size:28px;
-      margin-bottom:12px;
-      color:#0066ff;
-      font-weight:bold;
-    }
-	
-	.titleYT{
-      font-size:28px;
-      margin-bottom:12px;
-      color:#fff;
-      font-weight:bold;
-    }
-	
-	.titleIG{
-      font-size:28px;
-      margin-bottom:12px;
-      color:#ff00cc;
-      font-weight:bold;
-    }
-	
-	.titleTG{
-      font-size:28px;
-      margin-bottom:12px;
-      color:#3399cc;
-      font-weight:bold;
-    }
-	
-	.titleTT{
-      font-size:28px;
-      margin-bottom:12px;
-      color:#ff9933;
-      font-weight:bold;
-    }
-	
-	.titleGG{
-      font-size:28px;
-      margin-bottom:12px;
-      color:#33cc33;
-      font-weight:bold;
-    }
-	
-    .desc{
-	  font-family: "CMU_Typewriter_Text_Bold", normal;
-      font-size:20px;
-      line-height:1.5;
-      color:#ddd;
-      margin-bottom:20px;
-    }
-
-    .btnFB{
-      display:inline-block;
-      text-decoration:none;
-      text-align:center;
-      background:#0066ff;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.2s;
-    }
-	
-	.btnYT{
-      display:inline-block;
-      text-decoration:none;
-      text-align:center;
-      background:#ff0033;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.2s;
-    }
-	
-	.btnIG{
-      display:inline-block;
-      text-decoration:none;
-      text-align:center;
-      background:#ff00cc;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.2s;
-    }
-	
-	.btnTG{
-      display:inline-block;
-      text-decoration:none;
-      text-align:center;
-      background:#3399cc;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.2s;
-    }
-
-	.btnTT{
-      display:inline-block;
-      text-decoration:none;
-      text-align:center;
-      background:#ff9933;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.2s;
-    }
-	
-	.btnGG{
-      display:inline-block;
-      text-decoration:none;
-      text-align:center;
-      background:#33cc33;
-      color:white;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:.2s;
-    }
-
-    .btnFB:hover{
-      background:#3399ff;
-    }
-	
-	.btnYT:hover{
-      background:#ff3366;
-    }
-	
-	.btnIG:hover{
-      background:#ff66ff;
-    }
-	
-	.btnTG:hover{
-      background:#6699cc;
-    }
-	
-	.btnTT:hover{
-      background:#ff9966;
-    }
-	
-	.btnGG:hover{
-      background:#33cc66;
-    }
-
-    @media(max-width:110px){
-      .page{
-        grid-template-columns:repeat(2,1fr);
-        aspect-ratio:auto;
-      }
-    }
-
-    @media(max-width:700px){
-      .page{
-        grid-template-columns:1fr;
-      }
-    }
   </style>
 </head>
 
@@ -366,64 +75,64 @@
 
   <div class="page">
 
-    <div class="cardFB">
+    <div class="card">
       <div>
-        <div class="titleFB">Facebook</div>
+        <div class="title">Facebook</div>
         <div class="desc">
           Публічна сторінка з анонсами івентів та медіа звітами.
         </div>
       </div>
-      <a href="https://www.facebook.com/profile.php?id=61591764995091" target="_blank" class="btnFB">Go to page</a>
+      <a href="https://www.facebook.com/profile.php?id=61591764995091" target="_blank" class="btn">Go to page</a>
     </div>
 
-    <div class="cardYT">
+    <div class="card">
       <div>
-        <div class="titleYT">You<font style="color: #ff0033;">Tube</font></div>
+        <div class="title">YouTube</div>
         <div class="desc">
           Відео з ігор, стріми та огляди спорядження.
         </div>
       </div>
-      <a href="https://www.youtube.com/@SFC.Airsoft" target="_blank" class="btnYT">Whatch now</a>
+      <a href="https://www.youtube.com/@SFC.Airsoft" target="_blank" class="btn">Whatch now</a>
     </div>
 
-    <div class="cardIG">
+    <div class="card">
       <div>
-        <div class="titleIG">Instagram</div>
+        <div class="title">Instagram</div>
         <div class="desc">
           Тизери, фото.
         </div>
       </div>
-      <a href="https://www.instagram.com/strikeforceclub" target="_blank" class="btnIG">View profile</a>
+      <a href="https://www.instagram.com/strikeforceclub" target="_blank" class="btn">View profile</a>
     </div>
 
-    <div class="cardTG">
+    <div class="card">
       <div>
-        <div class="titleTG">Telegram</div>
+        <div class="title">Telegram</div>
         <div class="desc">
           Тут новини клубу та анонси ігор. В чаті ми обговорюємо різні теми.
         </div>
       </div>
-      <a href="https://t.me/+KMU1KejjlJo0YTZi" target="_blank" class="btnTG">Join channel</a>
+      <a href="https://t.me/+KMU1KejjlJo0YTZi" target="_blank" class="btn">Join channel</a>
     </div>
 
-    <div class="cardTT">
+    <div class="card">
       <div>
-        <div class="titleTT">TikTok</div>
+        <div class="title">TikTok</div>
         <div class="desc">
           Стріми, тизери, фото.
         </div>
       </div>
-      <a href="https://www.tiktok.com/@strikeforceclub" target="_blank" class="btnTT">Have fun</a>
+      <a href="https://www.tiktok.com/@strikeforceclub" target="_blank" class="btn">Have fun</a>
     </div>
 
-    <div class="cardGG">
+    <div class="card">
       <div>
-        <div class="titleGG"><font style="color: #3399ff;">G</font><font style="color: #ff3333;">o</font><font style="color: #ffcc00;">o</font><font style="color: #3399ff;">g</font>l<font style="color: #ff3333;">e</font></div>
+        <div class="titleGG">Google</div>
         <div class="desc">
           Прокласти маршрут, додати свої фото/відео, залишити відгук.
         </div>
       </div>
-      <a href="https://maps.app.goo.gl/3d5Ba881Z7cYCSja7" target="_blank" class="btnGG">See on map</a>
+      <a href="https://maps.app.goo.gl/3d5Ba881Z7cYCSja7" target="_blank" class="btn">See on map</a>
     </div>
 
   </div>
