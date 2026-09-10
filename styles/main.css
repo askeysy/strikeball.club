@@ -25,6 +25,7 @@ body {
 
 .BigFont {
 	font-family: "volja-regular_w", normal;
+	color: black;
 }
 
 a {
@@ -64,7 +65,7 @@ ul {
   padding-bottom: 20px;
   width: calc(1360px + 30px);
   max-width: 100%;
-  font-family: "B52", normal;
+  font-family: "CMU_Typewriter_Text_Bold", normal;
   font-size: 23px;
 }
 
@@ -528,6 +529,24 @@ ul {
       background:#A79C65;
     }
 	
+	table,th,td{
+		border: 1px solid grey;
+		text-align:center;
+		font-family: "CMU_Typewriter_Text_Bold", normal;
+		width: 100%;
+		height: auto;
+} 
+
+th,td{
+   padding:10px;
+   width: 20%;
+		height: auto;
+}
+
+
+
+
+
 	@media (max-width: 991.98px) {
   .top-line__center {
     display: none;
