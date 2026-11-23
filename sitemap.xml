@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://strikeball.club</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://strikeball.club/SocialMedia</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://strikeball.club/price</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
